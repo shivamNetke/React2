@@ -1,32 +1,17 @@
 import './App.css';
-    const fruit=(name)=>{
-      alert(name)
-    }
-      let a = 'apple'
+import { useState } from "react"
+import Counter from './components/Counter';
+
 function App() {
-      function callFun() {
-      alert("callFun function called")
-    }
-
-    const arrowFunction=()=>{
-      alert("arrow function called")
-    }
-
-    // const fruit=(name)=>{
-    //   alert(name)
-    // }
-    //   let a = 'apple'
-return (
-  <>
-
-    <button onClick={callFun}> call callFun </button>
-    <br/>
-    <br/>
-    <button onClick={arrowFunction}> call arrowFunction </button>
-    <br/>
-    <br/>
-    <button onClick={()=>fruit(a)}> call fruit </button>
-
+  const [fruit, setFruit] = useState("apple")
+  const setfruitfun = () => {
+    setFruit("banana")
+  }
+  return (
+    <>
+      <h1>{fruit}</h1>
+      <button onClick={setfruitfun}>change fruit</button>
+      <Counter />
     </>
   );
 }
