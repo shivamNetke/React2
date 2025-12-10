@@ -1,13 +1,12 @@
-import "./App.css"; // Importing CSS for styling
-import Checkboxes from "./components/Checkboxes";
+import "./App.css";
+import Drowpdown from "./components/Dropdown";
 
 function App() {
 
   return (
     <>
-    <h3>handle Checkboxes in react </h3>
-    <Checkboxes />
-    
+      <h1>dropdown in jsx</h1>
+      <Drowpdown />
     </>
   );
 }
