@@ -1,0 +1,23 @@
+.heading {
+    color: green;
+}
+
+.profileImage {
+    width: 200px;
+}
+
+.cardDiv {
+    width: 200px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px black;
+    margin: 10px;
+}
+
+.text{
+    padding: 10px;
+}
+
+.allCardsDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
