@@ -1,18 +1,20 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Alert } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
+import './App.css';
+import UserChild from './components/UserChild';
 function App() {
+
+  const displayName = (param) =>{
+    alert(param)
+  }
+
+  const getUser = () =>{
+    console.log("getuser called");
+  }
 
   return (
     <>
-      <Button variant='danger'>ok</Button>
-      <Button variant='success'>ok</Button>
-      <Button variant='warning'>ok</Button>
-
-      <Alert variant="success">hello world</Alert>
-      <Alert variant="primary">hello world</Alert>
-      <Alert variant="danger">hello world</Alert>
-
+    <h2>call parent component from child component </h2>
+    <UserChild prop = {displayName} name="shivam" />
+    <UserChild prop = {displayName} name="virat" getUser = {getUser}/>
 
     </>
   );
