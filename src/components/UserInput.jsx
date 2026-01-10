@@ -3,7 +3,7 @@
 // import { forwardRef } from "react";
 
 // function UserInput(props, ref) {
- 
+
 // return(
 // <>
 //     <input type="text" placeholder="" ref={ref} />
@@ -17,12 +17,12 @@
 
 
 function UserInput(props) {
- 
-return(
-<>
-    <input type="text" placeholder="" ref={props.ref} />
 
-</>
-)
+    return (
+        <>
+            <input type="text" placeholder="" ref={props.ref} />
+
+        </>
+    )
 }
 export default UserInput;
